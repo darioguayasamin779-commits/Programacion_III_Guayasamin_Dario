@@ -6,14 +6,147 @@
     <title>Formularios</title>
 </head>
 <body>
-    <form action="/registro" >
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre">
+    <form action="/registro" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" 
+                        id="nombre" 
+                        name="nombre"
+                        placeholder="Ej. Luke Skywalker"
+                        minlength="3"
+                        maxlength="40"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="confirm_password">Confirmar Password:</label><br>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nivel">Nivel de la fuerza:</label><br>
+                    <input 
+                    type="number" 
+                    id="nivel" 
+                    name="nivel" 
+                    min="10"
+                    max="100"
+                    value="50"
+                    step="5"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Seleccione su bando:</p>
+                    <input type="radio" id="jedi" name="bando" value="jedi">
+                    <label for="jedi">Jedi</label><br>
+                    <input type="radio" id="sith" name="bando" value="sith">
+                    <label for="sith">Sith</label><br>
+                </td>
+                <td>
+                    <label for="nivel">Seleccione tus habilidades:</label><br>
+                    <input 
+                    type="checkbox"
+                    id="fuerza"
+                    name="habilidades"
+                    value="fuerza"
+                    >
+                    <label for="fuerza">Uso de la Fuerza</label><br>
+                    <input 
+                    type="checkbox"
+                    id="sable"
+                    name="habilidades"
+                    value="sable"
+                    >
+                    <label for="sable">Uso de la Sable</label><br>
+                    <input 
+                    type="checkbox"
+                    id="levitar"
+                    name="habilidades"
+                    value="levitar"
+                    >
+                    <label for="levitar">Levitar</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="planeta">Planeta de Origen:</label><br>
+                    <select id="planeta" name="planeta" required>
+                        <option value="">
+                            Seleccione un planeta
+                        </option>
+                        <option value="tatooine">
+                            Tatooine
+                        </option>
+                        <option value="alderaan">
+                            Alderaan
+                        </option>
+                        <option value="naboo">
+                            Naboo
+                        </option>
+                        <option value="coruscant">
+                            Coruscant
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <label for="droide">Droide:</label><br>
+                    <select id="droide" name="droide" multiple size="2">
+                        <option value="">
+                            Seleccione un Droide
+                        </option>
+                        <option value="c3po">
+                            C-3PO
+                        </option>
+                        <option value="BB-8">
+                            BB-8
+                        </option>
+                        <option value="R2-D2">
+                            R2-D2
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos Generales</legend>
+                        <label for="misiones">Misiones</label><br>
+                        <input type="number" id="misiones" name="misiones">
+                        <br>
+                        <label for="vuelos">Vuelos</label><br>
+                        <input type="number" id="vuelos" name="vuelos">
+                        <br>
+                    </fieldset>
+                </td>
+            </tr>
+            </tr>
+        </table>
         <button type="submit">Enviar</button>
-        <br>
-        <label for="apellido">Apellido</label>
-        <input type="text" id="apellido" name="apellido">
-        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
     </form>
 </body>
 </html>
