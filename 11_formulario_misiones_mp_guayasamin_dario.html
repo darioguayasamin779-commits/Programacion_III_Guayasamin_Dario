@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de clases - IDIOMIA</title>
+</head>
+
+<body>
+    <header>
+        <h1>Centro de Clases IDIOMIA</h1>
+        <p>Registro de sesiones de practica</p>
+    </header>
+
+
+    <hr>
+    <main>
+        <form action="#" method="get" id="registro-clases">
+            <fieldset>
+                <legend>Información de la clase</legend>
+                <label for="codigo">
+                    Código de clase:
+                </label>
+                <input type="text" id="codigo" name="codigo" placeholder="CLS-001" maxlength="10" required>
+                <br><br>
+                <label for="docente">
+                    Docente:
+                </label>
+                <select id="docente" name="docente" required>
+                    <option value="">
+                        Selecciona un docente
+                    </option>
+                    <option value="dario">
+                        Guayasamin Dario
+                    </option>
+                    <option value="tyron">
+                        Tyron
+                    </option>
+                    <option value="christian">
+                        Christian
+                    </option>
+                </select>
+
+                <br><br>
+
+                <label for="idioma">
+                    Idioma de la clase:
+                </label>
+                <input type="text" id="idioma" name="idioma" placeholder="Ej. Ingles" required>
+                <br><br>
+                <label for="fecha">
+                    Fecha de la clase:
+                </label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Características</legend>
+                <p>Nivel de la clase:</p>
+                <input type="radio" id="basico" name="nivel" value="basico" required>
+                <label for="basico">Basico</label>
+                <input type="radio" id="intermedio" name="nivel" value="intermedio">
+                <label for="intermedio">Intermedio</label>
+                <input type="radio" id="avanzado" name="nivel" value="avanzado">
+                <label for="avanzado">Avanzado</label>
+
+                <br><br>
+
+                <label for="dificultad">
+                    Nivel de dificultad (1 a 10):
+                </label>
+                <input type="number" id="dificultad" name="dificultad" min="1" max="10" value="5">
+                <p>Recursos necesarios:</p>
+                <input type="checkbox" id="diccionario" name="recursos" value="diccionario">
+                <label for="diccionario">
+                    Diccionario
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="audios" name="recursos" value="audios">
+                <label for="audios">
+                    Audios de pronunciacion
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="libro" name="recursos" value="libro">
+                <label for="libro">
+                    Libro de ejercicios
+                </label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Descripción de la clase</legend>
+                <label for="descripcion">
+                    Objetivo principal:
+                </label>
+
+                <br>
+
+                <textarea id="descripcion" name="descripcion" rows="5" cols="45" maxlength="500"
+                    placeholder="Describe el tema de la clase..." required></textarea>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">
+                Registrar clase
+            </button>
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <small>
+                IDIOMIA - 2026
+            </small>
+        </p>
+    </footer>
+</body>
+</html>

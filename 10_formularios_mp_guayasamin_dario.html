@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion IDIOMIA</title>
+</head>
+<body>
+    <h1>Formulario de inscripcion - IDIOMIA</h1>
+    <form action="/inscripcion" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ej. Dario"
+                        minlength="3"
+                        maxlength="40"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="confirm_password">Confirmar Password:</label><br>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="horas">Horas de estudio por semana:</label><br>
+                    <input
+                    type="number"
+                    id="horas"
+                    name="horas"
+                    min="1"
+                    max="40"
+                    value="5"
+                    step="1"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Seleccione su modalidad:</p>
+                    <input type="radio" id="presencial" name="modalidad" value="presencial">
+                    <label for="presencial">Presencial</label><br>
+                    <input type="radio" id="virtual" name="modalidad" value="virtual">
+                    <label for="virtual">Virtual</label><br>
+                </td>
+                <td>
+                    <p>Habilidades que desea mejorar:</p>
+                    <input
+                    type="checkbox"
+                    id="hablar"
+                    name="habilidades"
+                    value="hablar"
+                    >
+                    <label for="hablar">Hablar</label><br>
+                    <input
+                    type="checkbox"
+                    id="escuchar"
+                    name="habilidades"
+                    value="escuchar"
+                    >
+                    <label for="escuchar">Escuchar</label><br>
+                    <input
+                    type="checkbox"
+                    id="escribir"
+                    name="habilidades"
+                    value="escribir"
+                    >
+                    <label for="escribir">Escribir</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="idioma">Idioma a estudiar:</label><br>
+                    <select id="idioma" name="idioma" required>
+                        <option value="">
+                            Seleccione un idioma
+                        </option>
+                        <option value="ingles">
+                            Ingles
+                        </option>
+                        <option value="frances">
+                            Frances
+                        </option>
+                        <option value="aleman">
+                            Aleman
+                        </option>
+                        <option value="italiano">
+                            Italiano
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <label for="nivel">Nivel:</label><br>
+                    <select id="nivel" name="nivel" multiple size="3">
+                        <option value="a1">
+                            A1 - Principiante
+                        </option>
+                        <option value="b1">
+                            B1 - Intermedio
+                        </option>
+                        <option value="c1">
+                            C1 - Avanzado
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos Generales</legend>
+                        <label for="idiomas_hablados">Idiomas que ya habla</label><br>
+                        <input type="number" id="idiomas_hablados" name="idiomas_hablados">
+                        <br>
+                        <label for="anios">Años estudiando idiomas</label><br>
+                        <input type="number" id="anios" name="anios">
+                        <br>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Inscribirse</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

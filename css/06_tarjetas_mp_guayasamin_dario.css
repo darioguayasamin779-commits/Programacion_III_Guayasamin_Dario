@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #2563EB;
+    padding: 15px;
+}
+h1 {
+    color: white;
+}
+header p {
+    color: white;
+}
+main {
+    padding: 20px;
+}
+h2 {
+    color: #2563EB;
+}
+.tarjeta h3 {
+    margin-top: 0;
+    color: #2563EB;
+}
+.ingles {
+    border-color: #1D4ED8;
+}
+.frances {
+    border-color: #DC2626;
+}
+.aleman {
+    border-color: #FACC15;
+}
+footer{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align:center;
+}
+.tarjeta {
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid #ccc;
+}

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #172033;
+    color: white;
+}
+.contenedor1 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: darkcyan;
+    padding: 20px;
+}
+.contenedor2 {
+    display: flex;
+    flex-direction: row;
+    background-color: darkcyan;
+    padding: 20px;
+}
+.contenedor3 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: darkcyan;
+    padding: 20px;
+}
+.contenedor4 {
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+    padding: 20px;
+}
+.idioma {
+    background-color: #172033;
+    padding: 20px;
+    border: 2px solid gold;
+}
+.grupos1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.grupos2 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.grupos3 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.grupos4 {
+    display: flex;
+    justify-content: center;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.grupos5 {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.grupos6 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkkhaki;
+    padding: 20px;
+}
+.grupo {
+    background-color: #172033;
+    padding: 20px;
+    border: 2px solid white;
+}

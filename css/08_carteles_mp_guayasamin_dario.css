@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B1020;
+    color: #E5E7EB;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: #FACC15;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #FACC15;
+    margin: 0 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.cartel {
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 3px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.cartel h3 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.descripcion {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.frase {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.firma {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.estado {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #0B1020;
+}
+
+.abierta {
+    background-color: #22C55E;
+}
+
+.ultimos-cupos {
+    background-color: #F87171;
+}
+
+.finalizada {
+    background-color: #94A3B8;
+}
+
+.ingles {
+    background-color: #172033;
+    border-color: #2563EB;
+}
+
+.ingles h3 {
+    color: #FACC15;
+    text-shadow: 2px 2px 5px #2563EB;
+}
+
+.frances {
+    background-color: #24151B;
+    border-color: #DC2626;
+}
+
+.frances h3 {
+    color: #F87171;
+    text-shadow: 2px 2px 5px #DC2626;
+}
+
+.aleman {
+    background-color: #1F1D12;
+    border-color: #FACC15;
+}
+
+.aleman h3 {
+    color: #FDE68A;
+    text-shadow: 2px 2px 5px #A16207;
+}
+
+.volver {
+    display: block;
+    text-align: center;
+    color: #FACC15;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #172033;
+}

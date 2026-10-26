@@ -1,0 +1,107 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #172033;
+    color: white;
+}
+
+.contenedor{
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: #172033;
+}
+.docente{
+    padding: 20px;
+    background-color: #172033;
+    border: 2px solid #FACC15;
+}
+.equipo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    color: aliceblue;
+    background-color: #172033;
+}
+.areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    color: aliceblue;
+    background-color: #172033;
+}
+.area {
+    padding: 30px;
+    background-color: #2563EB;
+    border: 2px solid #FACC15;
+    text-align: center;
+}
+.aulas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 130px 90px;
+    gap: 10px;
+    padding: 20px;
+    color: aliceblue;
+    background-color: #172033;
+}
+.aulas div {
+    padding: 30px;
+    background-color: #2563EB;
+    border: 2px solid #FACC15;
+    text-align: center;
+}
+.libros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    color: aliceblue;
+    background-color: #172033;
+}
+.libros div {
+    padding: 30px;
+    background-color: #2563EB;
+    border: 2px solid #FACC15;
+    text-align: center;
+}
+.equipo2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    color: aliceblue;
+    background-color: #172033;
+}
+.idiomas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 15px;
+    padding: 20px;
+    color: aliceblue;
+    background-color: #172033;
+}
+.idiomas div {
+    padding: 30px;
+    background-color: rgb(124, 58, 237);
+    border: 2px solid rgb(223, 246, 117);
+    text-align: center;
+}
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    padding: 20px;
+    color: aliceblue;
+    background-color: #172033;
+}
+.cursos div {
+    padding: 30px;
+    background-color: rgb(124, 58, 237);
+    border: 2px solid rgb(223, 246, 117);
+    text-align: center;
+}
+.destacado {
+    grid-column: span 2;
+}
+.curso-principal {
+    grid-row: span 2;
+}
